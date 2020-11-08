@@ -5,9 +5,9 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import guru99.pages.DragAndDropPage;
-import jdk.nashorn.internal.runtime.regexp.joni.Matcher;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class DragAndDropSteps {
 
