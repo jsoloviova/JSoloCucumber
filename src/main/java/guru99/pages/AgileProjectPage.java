@@ -10,7 +10,6 @@ public class AgileProjectPage extends BasePage {
 
     LoginFormFragment loginFormFragment = new LoginFormFragment();
 
-
     SelenideElement welcomeMessage = $x("//marquee[@class='heading3']");
     String invalidCredentialsAlert = "User or Password is not valid";
 
@@ -25,5 +24,4 @@ public class AgileProjectPage extends BasePage {
     public boolean invalidCredentialsAlertShown() {
         return switchTo().alert().getText().contains(invalidCredentialsAlert);
     }
-
 }

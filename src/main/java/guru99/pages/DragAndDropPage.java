@@ -10,9 +10,10 @@ public class DragAndDropPage extends BasePage {
     SelenideElement To2 = $x("//*[@id='amt7']/li");
     SelenideElement To3 = $x("//*[@id='loan']/li");
     SelenideElement To4 = $x("//*[@id='amt8']/li");
-    SelenideElement successMessage = $("//div[@class='table4_result']/a[@class='button button-green']");
+    SelenideElement successMessage = $x("//div[@class='table4_result']/a[@class='button button-green']");
 
     public void navigate() {
+        switchTo().alert().accept();
         open("/test/drag_drop.html");
     }
 

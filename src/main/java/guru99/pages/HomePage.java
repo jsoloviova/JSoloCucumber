@@ -11,7 +11,6 @@ public class HomePage extends BasePage {
 
     SelenideElement loginForm = $("form[name='frmLogin']");
     SelenideElement newToursButton = $x("//a[text()='New Tours']");
-    SelenideElement tableDemoLink = $x("");
 
     public void navigate() {
         open("/");
